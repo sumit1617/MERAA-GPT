@@ -17,7 +17,7 @@ export const verifyToken = async (
   const token = req.signedCookies[`${COOKIE_NAME}`];
 
   if (!token || token.trim() === "") {
-    res.status(401).json({ message: "Token Not found" });
+    return res.status(401).json({ message: "Token Not found" });
   }
 
   return new Promise<void>((resolve, reject) => {

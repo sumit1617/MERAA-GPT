@@ -28,3 +28,29 @@ body {
 .MuiOutlinedInput-notchedOutline {
   border-color: white !important;
 }
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+.ai-rotate {
+  animation: airotation 8s infinite linear;
+}
+
+@keyframes airotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
